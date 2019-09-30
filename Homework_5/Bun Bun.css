@@ -194,25 +194,25 @@ h2 {
   to {opacity: 1}
 }
 .navbar {
-	display: inline-block;
-		margin-left: auto;
+	display: grid;
+	   grid-template-columns: 25% 25% 25% 25%;
+	margin-top: 3%;
+	margin-left: auto;
 	margin-right: auto;
   background-color: white;
-  overflow: hidden;
   position:relative;
   bottom: 0;
-  width: 100%;
+  width: 50%;
 	padding-bottom: 8px;
 }
 
 /* Style the links inside the navigation bar */
 .navbar a {
 	margin: 0 auto;
-  float:left;
   font-family: Courier ;
   color: #6A091B;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 7px ;
   text-decoration: none;
   font-size: 17px;
 	border-radius: 30px;

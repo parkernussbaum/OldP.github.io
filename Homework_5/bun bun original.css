@@ -549,30 +549,30 @@ p{
 /* Place the navbar at the
 bottom of the page, and make it stick */
 .navbar {
-	display: inline-block;
-		margin-left: auto;
+	display: grid;
+	   grid-template-columns: 25% 25% 25% 25%;
+	padding-top: 3%;
+	margin-left: auto;
 	margin-right: auto;
   background-color: white;
-  overflow: hidden;
-  position:static;
+  position:relative;
   bottom: 0;
-  width: 100%;
-	padding-top: 30px;
-	padding-bottom: 8px;
+  width: 50%;
+	padding-bottom: 0px;
 }
 
 /* Style the links inside the navigation bar */
 .navbar a {
 	margin: 0 auto;
-  float:left;
   font-family: Courier ;
   color: #6A091B;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 7px ;
   text-decoration: none;
   font-size: 17px;
 	border-radius: 30px;
 }
+
 
 /* Change the color of links on hover */
 .navbar a:hover {
