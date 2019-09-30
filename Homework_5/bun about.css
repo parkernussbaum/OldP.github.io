@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Dropdown Button */
+
+
+.title1{
+	display:inline; /* the default for span */
+  width: 100%;
+  background-color: white; 
+	padding-bottom: 200px;
+	margin-bottom: 100px;
+}
+
+.line{
+  width: 35px;
+  height: 3px;
+  background-color: blue;
+  margin: 6px 0;
+}
+h1 {
+	text-align: center;
+ font-weight: normal;
+  color: #2764EE;
+  font-size: 50px;
+  font-family: Courier ; 
+	margin:auto;  
+	float: right;
+	padding-left:500px;
+		padding-bottom:30px; 
+	padding-top: 30px;
+}
+
+
+.dropbtn {
+  background-color: white;
+  color: white;
+  padding: 8px;
+  font-size: 16px;
+  border: 1;
+	border-radius: 10px;
+	border-color: blue;
+  cursor: pointer;
+  	display: inline-block;
+	margin-left:10px;
+	margin-top: 30px;
+
+
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  font-family: Courier ; 
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+	margin-top: 0px;
+		margin-left:10px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: blue;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: grey}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+h2 {
+  font-weight: lighter;
+  color:#6A091B ;
+  font-size: 30px;
+  font-family: Courier ;
+  text-align: center;
+  line-height: 50%;
+  margin-top:40px;
+  margin-bottom:20px;
+}
+
+
+hr {
+	margin-top: 0px;
+	border-color: blue
+}
+
+p{
+	display: block;
+	font-weight: lighter;
+  color: #6A091B;
+  font-size: 22px;
+	padding-left:25%;
+	padding-right:25%;
+  font-family: Courier ;
+  text-align: center;
+  line-height: 100%;
+  margin-top:40px;
+  margin-bottom:20px;	
+}
+
+img{
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+/* Place the navbar at the
+bottom of the page, and make it stick */
+.navbar {
+	display: inline-block;
+		margin-left: auto;
+	margin-right: auto;
+  background-color: white;
+  overflow: hidden;
+  position:relative;
+  bottom: 0;
+  width: 100%;
+	padding-bottom: 8px;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+	margin: 0 auto;
+  float:left;
+  font-family: Courier ;
+  color: #6A091B;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+	border-radius: 30px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #ddd;
+		border-radius: 30px;
+
+  color: black;
+	
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color: #6A091B;;
+	border-radius: 30px;
+  color: white;
+}

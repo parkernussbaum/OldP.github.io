@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>PUI Assignment 5 Parker Nussbaum</title>
+    <link href="Bun Bun.css" rel="stylesheet" type="text/css">
+	<script src="Bun Bun.js"></script>
+	<script>
+		setTimeout(function() {currentSlide(1);}, 250);
+	</script>
+</head>
+<header>
+	<span class="title1"></span>
+	<div class="dropdown">
+  		<button onclick="myFunction()" class="dropbtn" >
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</button>
+		<h1> Bun Bun Bake Lab</h1>
+		<div id="myDropdown" class="dropdown-content">
+    		<a href="Bun .html">Home</a>
+    		<a href="bun bun product .html">Our Buns</a>
+    		<a href="Bun About.html">About</a>
+  		</div>
+	</div>
+	<hr> 
+</header>
+<body>
+	<!-- Motto -->
+	<h2> Delicous</h2>
+	<h2> Sticky,</h2>
+	<h2> Sweet,</h2>
+	<h2> Yum</h2>
+<!-- Slideshow container -->
+	<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  		<div class="mySlides fade">
+    		<div class="numbertext">1 / 3</div>
+    		<img src="Screen Shot 2019-09-19 at 10.14.30 PM.png" alt="Bun Bun Original" style="width:100%">
+		</div>
+  
+
+  		<div class="mySlides fade">
+    		<div class="numbertext">2 / 3</div>
+    		<img src="Screen Shot 2019-09-19 at 10.13.43 PM.png" alt="Bun Bun Gluten Free" style="width:100%">
+    	</div>
+
+  		<div class="mySlides fade">
+    		<div class="numbertext">3 / 3</div>
+    		<img src="Screen Shot 2019-09-19 at 10.43.33 PM.png" alt="Bun Bun Pumpkin Spice" style="width:100%">
+    	</div>
+
+  <!-- Next and previous buttons -->
+  		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+
+<!-- The dots/circles -->
+	<div style="text-align:center">
+ 		<span class="dot" onclick="currentSlide(1)"></span>
+  		<span class="dot" onclick="currentSlide(2)"></span>
+  		<span class="dot" onclick="currentSlide(3)"></span>
+	</div>
+</body>
+<footer>
+	<div class="navbar">
+  		<a href="Bun .html" class="active">Home</a>
+ 		<a href="bun bun product .html">Our Buns</a>
+  		<a href="Bun About.html">About</a>
+	</div>
+</footer>
+</html>
+
+
+<!--https://www.w3schools.com/howto/howto_js_slideshow.asp - source for carasoul 
+https://www.w3schools.com/howto/howto_js_dropdown.asp /-->
