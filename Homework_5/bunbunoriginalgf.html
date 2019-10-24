@@ -3,65 +3,63 @@
 <head>
 	<meta charset="UTF-8">
 	<title>PUI Assignment 5 Parker Nussbaum</title>
-    <link href="bunbunoriginal.css" rel="stylesheet" type="text/css">
+	<link href="bunbunoriginal.css" rel="stylesheet" type="text/css">
 	<script src="bunbunoriginal.js"></script>
-	</head>
+</head>
 <body>
 	<header>
-	<!-- Hamburger Menu -->
+		<!-- Title-->
+		<div class="titlebox">
+			<h3 class="webtitle"> Bun Bun Bake Lab</h3>
+			<a href="BunCart.html" >
+				<div id="cartbox">
+					<img id="cartimage" alt="bun bun Original" src="CART.PNG" >
+					<p id="cartquantity">0</p>
+				</div>
+			</a>
+		</div>
+		<p id="headtext"> Pittsburgh's Favroite Cinnamon Bun </p>
+			<div class="navbar">
+		<a href="index.html" >Home</a>
+  		<a href="bunbunproduct.html" class="active">Our Buns</a>
+  		<a href="BunAbout.html">About</a>
+		<a id="carty" href="BunCart.html">Cart</a>
+		</div>
+				<h1 class="motto"> sticky, sweet, yum</h1>
 
-	<span class="title1"></span>
-	<div class="dropdown">
-  		<button onclick="myFunction()" class="dropbtn" >
-			<div class="line"></div>
-			<div class="line"></div>
-			<div class="line"></div>
-		</button>
-		<h1> Bun Bun Bake Lab</h1>
-  		<div id="myDropdown" class="dropdown-content">
-    		<a href="Bun.html">Home</a>
-   		 	<a href="bunbunproduct.html">Our Buns</a>
-    		<a href="BunAbout.html">About</a>
-			<a href="">Cart</a>
- 		</div>
-	</div>
-	
-	<hr> 
 </header>
-	<a href="bunbunproduct.html"> 
+	<a href="bunbunproduct.html#spot">
 		<h2 class="back"> Click to go back to our buns</h2>
 	</a>
-	<div class="product">
-	    <img id="original" alt="bun bun Original gf" src="BUN2.png" >
-	    <h2> Original Bun(GF) </h2>
-	    <div class="text">Who says traditional Italian Cinnamon buns can't be Gluten free? Come try ours today we promise it will not dissapoint. The best (gluten free) cinnamon bun in Pittbsurgh! </div>
-	    <p>Please select quantity and glaze!</p>
-	    <span id="a">
-			<!-- QUANTITYY-->
-
-	   		<select class ="quantity"> 
-  				<option value="1" selected>1</option>
+<div class="product">
+	    <img id="original" alt="bun bun Original" src="BUN2.png" >
+	    <h2 class="productType"> Original Bun Bun GF</h2>
+	    <div class="text">Who says traditional Italian Cinnamon buns can't be Gluten free? Come try ours today we promise it will not disappoint. The best (gluten free) cinnamon bun in Pittsburgh!</div>
+	    <p class="select">Please select quantity and glaze!</p>
+		<!-- Product selection -->
+	    <span class="a" id="classic">
+	    	<select id="tony" class="quantity" onchange="myFunction2()"> 
+  				<option value="1" selected="selectedvalue">1</option>
   				<option value="6">6</option>
   				<option value="12">12</option>
   				<option value="24" >24</option>
 			</select>
-			<!-- GLAZE-->
-	  		<select class ="glaze"> 
+
+	 		 <select id ="glaze" class="glaze"> 
   				<option value="1">Non-glazed</option>
-  				<option value="6">Sugar + milk</option>
- 				<option value="12">Vanilla + Milk</option>
+ 				<option value="6">Sugar + milk</option>
+  				<option value="12">Vanilla + Milk</option>
   				<option value="24" >Double choc.</option>
 			</select>
-			<button class="addtocart"> Add to Cart </button>
-		</span>		
-	</div>
+			  <p id="totalCost"> Total:  $0.00 </p>
+
+			<button id="addtocart" class="addtocart" onclick="myFunction()" > Add to Cart </button>
+		</span>			
+		
+</div>
 	<footer>
-	<div class="navbar">
- 		<a href="Bun.html" >Home</a>
-  		<a href="bunbunproduct.html" class="active">Our Buns</a>
-  		<a href="BunAbout.html">About</a>
-		<a href="">Cart</a>
-	</div>
+				<h4 class="footer"> Copyright Bun Bun Bake Lab 2019</h4>
+
 </footer>
 </body>
 </html>
