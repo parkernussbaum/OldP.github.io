@@ -68,7 +68,6 @@ function addProduct(){
 	else {
 		glaze = "Double choc.";
 	}
-	
 	cost = cost*quantit;
 	var product = [pro,glaze,quantit,cost]; //creating individual product array
 	totalProduct.push(product);  //adding it to master list of all products in cart
@@ -104,7 +103,7 @@ function createCart(){
 		
 	var img = new Image(); 
 		if ( totalProduct[i][0] == " Original Bun Bun GF"){	//checking to see which image will use for product 
-			img.src =  'bun2.png';
+			img.src =  'BUN2.png';
 		}
 		else if (totalProduct[i][0] ==" Walnut Bun Bun"){
 			img.src =  'BUN8.png'
@@ -117,15 +116,15 @@ function createCart(){
 	cell3.innerHTML = (totalProduct[i][1]); 				//setting product glaze name 
 	cell4.innerHTML = (totalProduct[i][2]) + " " + "qty"; 	//setting total quantity
 	cell5.innerHTML = "$ " + (totalProduct[i][3]);			//setting cost associatedf with product 
-		totalcost = totalcost + (totalProduct[i][3]); 		//setting sub total and cost calculations 
-		totalquantityCart = totalquantityCart + parseInt(totalProduct[i][2]); //setting cart total
+	totalcost = totalcost + (totalProduct[i][3]); 		//setting sub total and cost calculations 
+	totalquantityCart = totalquantityCart + parseInt(totalProduct[i][2]); //setting cart total
 	
-		var button = document.createElement("button"); //creating button
-		button.classList.add("addtocart"); // naming class of button
-		button.setAttribute("id", i);
-		button.innerHTML = "Delete";
-		var k = 0;
-		button.onclick = function(){  //creates button onclick funcrion!
+	var button = document.createElement("button"); //creating button
+	button.classList.add("addtocart"); // naming class of button
+	button.setAttribute("id", i);
+	button.innerHTML = "Delete";
+	var k = 0;
+	button.onclick = function(){  //creates button onclick funcrion!
 	k = this.id;					//sends the id of the button clicked to delete funcrtion - the id represenrts the index in the product list 
 	deletBoi(k);};                //naming the function that we are calling and sending it an index based on i value to delete
 	cell6.appendChild(button);
@@ -150,7 +149,7 @@ var table2 = document.getElementById("bunboxtotal"); // drawing lower table for 
 	
 function deletBoi(val1){
 	
-	alert (totalProduct + "val1 " + val1);
+	//alert (totalProduct + "val1 " + val1);
 	totalProduct.splice(val1,1); //deletes selecited index from master list 
 	//list.splice (x,y);  x is the where we are starting delete, y is how many indexes we are deleting
 	var jsonStr = JSON.stringify( totalProduct ); //sending that information to JSON
