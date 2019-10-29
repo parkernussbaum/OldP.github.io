@@ -1,0 +1,502 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Dropdown Button */
+
+body{
+	background:white
+}
+
+
+header{
+   	background: url("FFD.jpg");
+	background-blend-mode: hard-light;
+   	background-repeat: no-repeat;
+ 	background-size: cover;
+	width: 100%;
+}
+
+.titlebox{
+	display: inline-block;
+	background: #AFD8E4;
+	width:100%;
+}
+.line{
+  	border: 2px solid #AFD8E4;
+	margin:auto;
+}
+
+#cartbox{
+	width:70px;
+	height: 40px;
+	border-radius: 5px;
+	padding:5px;
+	border: 1px solid white;
+	display:inline-block;
+	margin-left:2%;
+	
+}
+#cartimage{
+	display: inline;
+	width: 40%;
+	padding-top:5px;
+}
+#cartquantity{
+	display: inline;
+	font-family: Courier; 
+	color:white;
+	font-size: 30px;
+}
+
+.webtitle{
+	background: #AFD8E4;
+	margin-left:25%;
+	margin-right:100px;
+	text-align: center;
+  	font-family: Courier ; 
+	color: white;
+	font-weight: normal;
+	display:inline;
+	font-size: 75px;
+	
+}
+
+.motto {
+	text-align: center;
+ 	font-weight: bold;
+  	color: #6A091B;
+  	font-size: 60px;
+  	font-family: Courier ; 
+	margin: 7%;
+	padding-bottom: 10%;
+}
+
+#headtext{
+	background: #AFD8E4;
+	color: white;
+	font-size: 20px;
+	font-weight: normal;
+	margin: auto;
+	padding-top: 5px;
+	padding-bottom: 20px;
+	text-align: center;
+  	font-family: Courier ; 
+}
+
+
+
+
+
+
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+/* CSS Document */
+/* Dropdown Button */
+
+/* Place the navbar at the
+bottom of the page, and make it stick */
+.navbar {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	margin-left: auto;
+	margin-right: auto;
+  	background-color: white;
+	opacity: 0.8;
+  	bottom: 0;
+  	width: 100%;
+	padding-top: 5px;
+	padding-bottom:5px;
+
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+	margin: 0 auto;
+  	font-family: Courier ;
+  	color: #6A091B;
+	opacity: .7;
+  	text-align: center;
+  	padding: 10px 20px ;
+  	text-decoration:none;
+  	font-size: 17px;
+	border-radius: 30px;
+}
+
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  	background-color: #ddd;
+  	color: black;
+	
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  	background-color: #6A091B;;
+  	color: white;
+}
+
+.back{
+	text-align:left;
+	font-size:24px;
+	margin-left:30%;
+	font-family: Courier ;
+	color: #6A091B;
+}
+
+
+
+.productType {
+  	font-weight: lighter;
+  	color: #6A091B;
+  	font-size: 40px;
+  	font-family: Courier ;
+  	text-align: center;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	
+}
+
+.text {
+	text-align: left;
+	color: #6A091B;
+	font-family: Courier ;
+	margin-top: 40px;
+	font-size: 20px;
+	width: 40%;
+	margin-bottom: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	
+
+}
+
+#original{
+	height:40%;
+	width: 40%;
+	margin-left: 30%;
+	margin-right: 25%;
+}
+
+.select{
+	font-weight: 800;
+	color: #6A091B;
+	font-family: Courier ;
+    width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 20px;
+
+	
+}
+.quantity{
+	color:#6A091B;
+    font-size: 20px;	
+	font-family: Courier ;
+}
+
+.glaze{
+	color:#6A091B;
+    font-size: 19px;	
+	font-family: Courier ;
+	margin-left:5px;
+}
+
+.addtocart{
+	color:white;
+	background-color: #6A091B;
+    font-size: 14px;	
+	font-family: Courier ;
+	margin-left:5px;
+	
+}
+
+.a{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+ 	padding: 8px;
+  	border: .5px solid #6A091B;  
+  	margin-left: auto;
+	margin-right: auto;
+  	background-color: white;
+	opacity: 0.8;
+  	bottom: 0;
+  	width: 50%;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+
+
+
+.footer{
+	background: #AFD8E4;
+	margin-top: 150px;
+	margin-bottom:0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+  	font-family: Courier ; 
+	color: white;
+	font-weight: normal;
+	font-size: 20px;
+}
+
+.clickorder {
+  	font-weight: lighter;
+  	color: #6A091B;
+  	font-size: 30px;
+ 	font-family: Courier ;
+  	text-align: left;
+  	line-height: 50%;
+  	margin-top:40px;
+  	margin-bottom:20px;
+  	margin-left: 10px;
+		
+		
+}
+
+.text1{
+	font-weight: normal;
+  	color: #6A091B;
+  	font-size: 18px;
+  	font-family: Courier ;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  	float: left;
+  	width: 30%;
+  	padding: 10px;
+  	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+/* Clear floats after image containers */
+.row::after {
+  	content: "";
+  	clear: both;
+  	display: grid;
+ 	margin-left: 200px;
+	margin-right: auto;
+}
+
+.polaroid {
+  	width: 100%;
+  	background-color: white;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img {width: 100%}
+
+div.container {
+  	text-align: center;
+  	padding: 10px 20px;
+}
+
+.about{
+	  font-weight: lighter;
+  	color: #6A091B;
+  	font-size: 30px;
+  	font-family: Courier ;
+  	text-align: center;
+  	line-height: 50%;
+ 	margin-top:60px;
+ 	margin-bottom:20px;
+	margin-left: 10px;
+		
+}
+
+.text2{
+	font-weight: normal;
+  	color: #6A091B;
+  	font-size: 22px;
+  	font-family: Courier ;
+  	margin-left:30%;
+  	margin-right:28%;
+}
+
+/*index*/
+/* Slideshow container */
+.slideshow-container {
+  	max-width: 1000px;
+  	position: relative;
+  	margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  	display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  	cursor: pointer;
+  	position: absolute;
+  	top: 50%;
+  	width: auto;
+  	margin-top: -22px;
+  	padding: 16px;
+  	color: white;
+  	font-weight: bold;
+  	font-size: 18px;
+  	transition: 0.6s ease;
+  	border-radius: 0 3px 3px 0;
+  	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  	right: 0;
+  	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  	background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  	color: #f2f2f2;
+  	font-size: 12px;
+  	padding: 8px 12px;
+  	position: absolute;
+  	top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  	cursor: pointer;
+  	height: 15px;
+  	width: 15px;
+  	margin: 0 2px;
+  	background-color: #bbb;
+  	border-radius: 50%;
+  	display: inline-block;
+  	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  	background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  	-webkit-animation-name: fade;
+  	-webkit-animation-duration: 1.5s;
+  	animation-name: fade;
+  	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  	from {opacity: .4}
+  	to {opacity: 1}
+}
+
+@keyframes fade {
+  	from {opacity: .4}
+  	to {opacity: 1}
+}
+
+.bunbox{
+	margin-top: 50px;
+	background: white;
+	margin-left: 15%;
+	width: 70%;
+	border-style: solid;
+	border-color: black;
+	table-layout:fixed;
+} 
+
+	
+.productimage{
+	height:100%;
+	padding: 10px;
+	display: grid;
+}
+
+th{
+  font-weight: heavy;
+  color: #6A091B;
+  font-size: 16px;
+  font-family: Helvetica ;
+	
+}
+
+.quantity2{
+	color:#6A091B;
+    font-size: 14px;	
+	font-family: Courier ;
+	margin-right: auto;
+	width: 50%;
+
+}
+
+.glaze2{
+	color:#6A091B;
+    font-size: 14px;	
+	font-family: Courier ;
+}
+
+tr:hover {background-color: #AFD8E4;}
+
+td{
+  	font-weight: normal;
+  	color: #6A091B;
+  	font-size: 14px;
+  	font-family: Helvetica ;
+	text-align: center;
+}
+
+th, td {
+  	border-bottom: 1px solid #ddd;
+}
+
+table {
+  	border-collapse: collapse;
+}
+.bunboxtotal{
+	margin-top: 30px;
+	background: white;
+	margin-left: 35%;
+	width: 50%;
+	border-style: solid;
+	border-color: black;
+	table-layout:fixed;
+} 
+
+.clicktoorder{
+	color:white;
+	background-color: #6A091B;
+	text-align: center;
+    font-size: 30px;	
+	font-family: Courier ;
+	margin-left:40%;
+	margin-bottom: 20px;
+}
+
+.indextext{
+	text-align:left;
+	font-size:28px;
+	margin-left:20%;
+	margin-right:20%;
+	font-family: Courier ;
+	color: #6A091B;
+}
+
+#totalCost{
+	text-align:left;
+	font-size:19px;
+	padding-left: 10px;
+	font-family: Courier ;
+	color: #6A091B;
+}
+
