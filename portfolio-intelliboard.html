@@ -89,471 +89,222 @@
        	  <div class="col-md-12">
        	    <h2 class="mb-4 section-title" data-aos="fade-up"> Introduction </h2>
        	    <p data-aos="fade-up" data-aos-delay="100"> This project took place in the fall of 2019 as my Machine Learning and Sensing final at Carnegie Mellon University and lasted approx 8 weeks. The project team consisted of Matt Valentine, Lauren Whittingham, and me - all focusing on this concept of creating interactive controllers for computers based on drawing surfaces. With our studio being filled with whiteboards - we imagined a world where basic cameras and projectors could read drawings off a white board and interact with them or read the drawings as controllers for a computer. </p>
-            <p data-aos="fade-up" data-aos-delay="100"> With our domain selected we each focused on a different area. Matt focused primarily on keying a camera and projector so that no matter the angle at which they were to the wall - the image (and what the computer reads visually) is flat. Lauren focused on shape recognition and creating bounding boxes, while I focused on gesture and getting a machine learning algorithm to understand basic interaction with shapes.
+            <p data-aos="fade-up" data-aos-delay="100"> With our domain selected we each focused on a different area. Matt focused primarily on keying a camera and projector so that no matter the angle at which they were to the wall - the image (and what the computer reads visually) is flat. Lauren focused on shape recognition and creating bounding boxes, while I focused on gesture and getting a machine learning algorithm to understand basic interaction with shapes. </p>
+          </div>
+      </div>
+    
+       <div class="row text-left justify-content-left mb-5">
+          <div class="col-md-12">
             <h2 class="mb-4 section-title" data-aos="fade-up"> Concept </h2>
-       	    <p data-aos="fade-up" data-aos-delay="100">There have been dozens of attempts to merge the collaboration and communication capabilities of a whiteboard with the dynamic interaction of digital tools, but they have always had a digital first design mentality.
+            <p data-aos="fade-up" data-aos-delay="100">There have been dozens of attempts to merge the collaboration and communication capabilities of a whiteboard with the dynamic interaction of digital tools, but they have always had a digital first design mentality or hardware focused solution.
             We have aimed to reverse this trend by making an ordinary whiteboard capable of digital interaction. Through the use of machine learning and computer vision we have been able to create a working prototype that can automatically calibrate itself, detect drawn shapes, and detect gestures.
           </p>
-       	  </div>
+          </div>
       </div>
-	<div class="row justify-content-center mb-5">
-        <div class="col-lg-12">
-			  <div class="media d-block media-custom text-center">
-          	<a data-aos="fade-up" data-aos-delay="100" href="images/maya.jpg" class="mb-3 d-block" data-fancWith our domain selected we each focused on a different area. Matt focused primarily on keying a camera and projector so that no matter the angle at which they were to the wall - the image (and what the computer reads visually) is flat. Lauren focused on shape recognition and creating bounding boxes, while I focused on gesture and getting a machine learning algorithm to understand basic interaction with shapes.
 
-ybox="gal"><img src="images/maya.jpg" alt="Image" class="img-fluid"></a>
-			</div>
-		</div>
-	</div>
-	  <div class="row text-left justify-content-left mb-5">
-       	 <div class="col-md-12">
-       	    <h2 class="mb-4 section-title" data-aos="fade-up"> Problem: Mitigating water waste </h2>
-       	    <p data-aos="fade-up" data-aos-delay="100">Water is an essential element of human life and our modern home. An existence without water is unimaginable - how could we cook, clean, or even hydrate ourselves. While the thought of water scarcity is unimaginable here in Pittsburgh - it is becoming increasingly common around the world due to drought, pollution, climate change, and mismanagement. Cities like Pittsburgh cannot take their water supply for granted and that is why it is a problem space focusing on. </p>
-       	 </div>
+    <div class="row">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="media d-block media-custom text-center">
+            <a data-aos="fade-up" data-aos-delay="100"  href="images/ml_2.jpg" class="mb-3 d-block" data-fancybox="gal"><img src="images/ml_2.jpg" alt="Image Placeholder" class="img-fluid"></a>
+            <div class="media-body">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="media d-block media-custom text-center">
+            <a data-aos="fade-up" data-aos-delay="100"  href="images/ml_1.jpg" class="mb-3 d-block" data-fancybox="gal"><img src="images/ml_1.jpg" alt="Image Placeholder" class="img-fluid"></a>
+            <div class="media-body">
+            </div>
+          </div>
+        </div>
       </div>
-	
-		<div class="container">
-       <div class="row text-left justify-content-left mb-5">
+
+
+      
+
+
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-12">
+      <div class="media d-block media-custom text-center">
+          <h3 class="mb-4 section-title text-left" data-aos="fade-up">Model of Intelliboard system</h3>
+          <p class="text-left" data-aos="fade-up" data-aos-delay="100">The camera acts as the key to this process. Using OpenCV, jypiter notebooks, and scikit learn machine learning algorthims, the camera is able to determine orientation, flattens the image, and then interpret what it sees on the white board. At that point the user would either be in an interact or draw state. These images would then go back to the camera to be processed and the model would be updated with the projector</p>
+          <a data-aos="fade-up" data-aos-delay="100" href="images/ml_3.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/ml_3.png" alt="Image" class="img-fluid"></a>
+      </div>
+    </div>
+  </div>
+
+
+		<!-- SPELL CHECKED TO HERE INTRO OVER -->
+    <!-- Approach --> 
+ 
+      <div class="row text-left justify-content-left mb-5">
          <div class="col-md-12">
-           <h2 class="mb-4 section-title" data-aos="fade-up"> Scope: business, provider, customer </h2>
-           <p data-aos="fade-up" data-aos-delay="100">To best create a solution to tackle water waste - we felt that cities were the right scope to focus on. This is because cities typically hold the budget allocation for water/sustainability efforts, providers only focus on serving city inhabitants, and citizens (of the city) are the only customers. This overlap means that cities, providers, and customers have very similar wants: lower cost/overhead and reduce unnecessary use. For this project- we focused on the City of Pittsburgh and a solution to augment the relationship that exists between Pittsburgh Water and the residents who utilize the utility.</p>
+           <h2 class="mb-4 section-title" data-aos="fade-up"> Gesture Interaction: Slider, Rotary, Button </h2>
+           <p data-aos="fade-up" data-aos-delay="100">With my focus being on the interactive aspect of the system I looked towards creating novel gesture interactions with drawn objects on a white board. Since some of the most common interactions on digital touch screen devices today are rotary knobs, sliders, and push buttons - I wanted to create a way to translate this language with our system. By leveraging the shape detection, I decided to create an algorithm to read slider position and rotary position.</p>
          </div>
       </div>
 
-		<div class="row">
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="media d-block media-custom text-center">
-            <a data-aos="fade-up" data-aos-delay="100"  href="images/maya_1.jpg" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_1.jpg" alt="Image Placeholder" class="img-fluid"></a>
+
+    <div class="row text-left justify-content-center mb-5">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="media d-block media-custom text-left">
+            <a data-aos="fade-up" data-aos-delay="100"  href="images/ml_7.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/ml_7.png" alt="Image Placeholder" class="img-fluid"></a>
+            <p data-aos="fade-up" data-aos-delay="100"> vectors depicting from left to right - rotary knob, push button, horizontal sliders</p>
             <div class="media-body">
             </div>
           </div>
         </div>
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="media d-block media-custom text-center">
-            <a data-aos="fade-up" data-aos-delay="100"  href="images/maya_2.jpg" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_2.jpg" alt="Image Placeholder" class="img-fluid"></a>
-            <div class="media-body">
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="media d-block media-custom text-center">
-           <a data-aos="fade-up" data-aos-delay="100"  href="images/maya_3.jpg" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_3.jpg" alt="Image Placeholder" class="img-fluid"></a>
-            <div class="media-body">
-            </div>
-          </div>
-        </div>
-
-
-
-		<!-- Gorilla Research section --> 
+      </div>
 
       <div class="row text-left justify-content-left mb-5">
          <div class="col-md-12">
-           <h2 class="mb-4 section-title" data-aos="fade-up"> Gorilla Research: Initial discoveries </h2>
-           <p data-aos="fade-up" data-aos-delay="100">Because water usage is such a ubiquitous part of modern life, the domain is ripe for guerrilla research. The team approached a dozen Pittsburgh residents walking through five Pittsburgh neighborhoods and asked questions about their water usage. We hoped to uncover 1)If people care about their own water consumption 2)How much water people thought they used 3)Relationships between residents and their water utility 4)Any water conservation habits or concerns.</p>
-
-            <p data-aos="fade-up" data-aos-delay="100">Much to our surprise, most interviewees said they did not care about their own water consumption. 
-            We quickly adapted our questions to explore why, and we found people did not care because they lacked the context about their water usage to make sense of any data they had. People don’t know what a normal amount of water usage is, nor do they know if any behaviors they take actually conserves water. This lack of context makes disengaging easy. It also present challenges for PGH water authority becuase this lack of awarness causes a disconnect between their vision of reduction of water usage and reality.
-            </p>
+           <h2 class="mb-4 section-title" data-aos="fade-up"> Approach: How it would work </h2>
+           <p data-aos="fade-up" data-aos-delay="100">The system would first detect a shape (line or circle) and then create bound box around the shape. From there it would look for intentional motion in that bounding area that would then be cross referenced to our ml algorithm. This data then would feed back into our total pipeline and give the user feedback that it received the command and update the model view. </p>
+          <p data-aos="fade-up" data-aos-delay="100">Using the bounding box incoming data - we will use machine learning to featurize and classify to determine where the hand is in relation to the shape. The system will be trained on both the left and right hand to make it adaptable. It will also use features that are not affected by ambient conditions (light, temp,etc).   </p>
          </div>
       </div>
+
+
+      <!-- Ground truth --> 
+
+
+    <div class="row text-left justify-content-left mb-5">
+        <div class="col-lg-12">
+           <h2 class="mb-4 section-title" data-aos="fade-up">Training: Ground truth images </h2>
+            <p data-aos="fade-up" data-aos-delay="100">Using stills from my videos of preforming actions - I generated 120 images of rotary knob on a 12” circle (15 stills at 0,90,180,270 deg increments both left and right hand) and 110 images of a 18” slider (11 images at 0%,25%,50%,75%, and 100% increments - both left and right hand). These images were all shot with the same camera we were going to use for our final demonstration to assure success.
+            </p>
+        </div>
+    </div>
+
+    <div class="row text-left justify-content-center mb-5">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="media d-block media-custom text-left">
+            <a data-aos="fade-up" data-aos-delay="100"  href="images/ml_gif1.gif" class="mb-3 d-block" data-fancybox="gal"><img src="images/ml_gif1.gif" alt="Image Placeholder" class="img-fluid"></a>
+            <p data-aos="fade-up" data-aos-delay="100"> Stills of the varies images that were used for different ground truth states in rotary model </p>
+            <div class="media-body">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row text-left justify-content-center mb-5">
+        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+          <div class="media d-block media-custom text-left">
+            <a data-aos="fade-up" data-aos-delay="100"  href="images/ml_gif2.gif" class="mb-3 d-block" data-fancybox="gal"><img src="images/ml_gif2.gif" alt="Image Placeholder" class="img-fluid"></a>
+            <p data-aos="fade-up" data-aos-delay="100"> Stills of the varies images that were used for different ground truth states in slider model </p>
+            <div class="media-body">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+	<!-- Featurizing--> 
+	
+      <div class="row text-left justify-content-left mb-5">
+        <div class="col-lg-12">
+           <h2 class="mb-4 section-title" data-aos="fade-up"> Featurizing </h2>
+            <p data-aos="fade-up" data-aos-delay="100">Initial attempts focused at using individual features based on grayscale mean/std, edge detection mean/std, and threshold curvature (single numerical values) but found that performance was low due to overlap in Left and right hand. I instead opted to preprocess the photos to a low resolution (around 40 x 40 pixels) and run the entire image as a feature. This brought performance up significantly and proved to be a successful approach.
+            </p>
+        </div>
+    </div>
+
+      <div class="row text-left justify-content-center mb-5">
+        <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+          <div class="media d-block media-custom text-left">
+            <a data-aos="fade-up" data-aos-delay="100"  href="images/gesture_recog.gif" class="mb-3 d-block" data-fancybox="gal"><img src="images/gesture_recog.gif" alt="Image Placeholder" class="img-fluid"></a>
+            <p data-aos="fade-up" data-aos-delay="100">A visualization of preprocessed image, to 40x40 pixel image, to canny/threshold detection, to combined feature vector</p>
+            <div class="media-body">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  <!-- Featurizing--> 
+  
+
+      <div class="row text-left justify-content-left mb-5">
+        <div class="col-lg-12">
+           <h2 class="mb-4 section-title" data-aos="fade-up"> Testing </h2>
+            <p data-aos="fade-up" data-aos-delay="100">The algorithm was trained and tested through 10 fold cross validation and the features were not normalized. The highest preforming by far was Random forest - but I also tried SVM-RBF, SVM-linear, and KNN neighbor. Results with random forest were coming in around 92% for Slider but significantly lower for rotary around 82%. Also - during live testing with a camera the system behaved strangely and unpredictable even when training conditions were mimicked. I knew that more ground truth conditions could be an easy fix.
+            </p>
+        </div>
+    </div>
+
+      <div class="row text-left justify-content-left mb-5">
+        <div class="col-lg-12">
+           <h2 class="mb-4 section-title" data-aos="fade-up"> Increasing functionality </h2>
+            <p data-aos="fade-up" data-aos-delay="100">Because of these lack luster results - I went back and added an extra 120 images to rotary (of 45, 135, 215, 315 deg L+R) and 110 images to slider( 12,32,62 and 87% L+ R). I also added a no hand class - I thought this would be useful so that our total pipeline would know to ignore the space if there was no movement.
+            </p>
+        </div>
+    </div>
+
+      <div class="row text-left justify-content-center mb-5">
+        <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+          <div class="media d-block media-custom text-left">
+            <a data-aos="fade-up" data-aos-delay="100"  href="images/ml_44.gif" class="mb-3 d-block" data-fancybox="gal"><img src="images/ml_44.gif" alt="Image Placeholder" class="img-fluid"></a>
+            <p data-aos="fade-up" data-aos-delay="100">A gif of a live test of the slider functionality once performance was bolstered with more training data</p>
+            <div class="media-body">
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- SPELL CHECKED TO HERE INTRO OVER --> 
+
+  <!-- Finalizing--> 
+
+      <div class="row text-left justify-content-left mb-5">
+        <div class="col-lg-12">
+           <h2 class="mb-4 section-title" data-aos="fade-up">Final Accuracy and Performance </h2>
+            <p data-aos="fade-up" data-aos-delay="100">Final performance for the slider with the added extra 5 ground truths ended up around 87-88% with random forest. For our implemented system this tested to be successful enough for a minimum viable product. Other classifiers - KNN - 75%  / SVM_RBF - 23%. Final performance of the rotary system with the added extra 5 ground truths ended up around 92-94% with random forest. For our implemented system this tested to be successful enough for a minimum viable product. Other classifiers - KNN - 75%  / SVM_RBF - 42%
+            </p>
+        </div>
+    </div>
 
 
 
     <div class="row">
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="media d-block media-custom text-left">
-        <h3 style="color:#EABC24;" data-aos="fade-up" data-aos-delay="100">“I don’t care about my water usage... Beacause I do not understand it!"</h3>
-            <div class="media-body">
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="media d-block media-custom text-left">
-        <h3 style="color:#EABC24;" data-aos="fade-up" data-aos-delay="100">"What even is normal water usage? It is impossible to know whether I am being excessive or normal."</h3>
-            <div class="media-body">
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="media d-block media-custom text-left">
-        <h3 style="color:#EABC24;" data-aos="fade-up" data-aos-delay="100">"Most of our users could not tell you the difference between 10 gallons and 50 gallons ..  that is a problem when our goal is to conserve."</h3>
-            <div class="media-body">
-            </div>
-          </div>
-        </div>
-    </div>
-
-      <!-- Personas --> 
-
-
-    <div class="row text-left justify-content-left mb-5">
-        <div class="col-lg-12">
-           <h2 class="mb-4 section-title" data-aos="fade-up"> Building our personas </h2>
-            <p data-aos="fade-up" data-aos-delay="100">With our gorilla research and interviews as a guiding light - we created three personas that reflect each of the key stakeholder group in our proudct space. One for the customer, one for the service provider, and one for the city of Pittsburgh.
-            </p>
-        </div>
-    </div>
-<div class="nonloop-block-11 owl-carousel">
-  <div class="item">
-  <div class="row justify-content-center mb-5">
-    <div class="col-lg-12">
-      <div class="media d-block media-custom text-left">
-        <a data-aos="fade-up" data-aos-delay="100" href="images/maya_persona.jpg" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_persona.jpg" alt="Image" class="img-fluid"></a>
-        <p data-aos="fade-up" data-aos-delay="100">Buisness persona - a city council member who encompasses the views of a pro sustainability platform, a tighter civic budget, and wants to lower living costs. 
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="item">
-  <div class="row justify-content-center mb-5">
-    <div class="col-lg-12">
-      <div class="media d-block media-custom text-left">
-        <a data-aos="fade-up" data-aos-delay="100" href="images/maya_persona2.jpg" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_persona2.jpg" alt="Image" class="img-fluid"></a>
-        <p data-aos="fade-up" data-aos-delay="100">Provider persona -  a senior customer service manager who wants to better customer relationship, reduce water waste, and reduce wasted water revenues. 
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="item">
-  <div class="row justify-content-center mb-5">
-    <div class="col-lg-12">
-      <div class="media d-block media-custom text-left">
-        <a data-aos="fade-up" data-aos-delay="100" href="images/maya_persona3.jpg" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_persona3.jpg" alt="Image" class="img-fluid"></a>
-        <p data-aos="fade-up" data-aos-delay="100">Customer persona - a lower income student who struggles with not understanding water usage, with high water bills, and the overall goal of reducing their usage to lower costs.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-	<!-- Customer Journey Mapping --> 
-	
-      <div class="row text-left justify-content-left mb-5">
-        <div class="col-lg-12">
-           <h2 class="mb-4 section-title" data-aos="fade-up"> Journey mapping </h2>
-            <p data-aos="fade-up" data-aos-delay="100">Generating journey maps allowed our team to transition from the personas, representing users’ needs at an overview, to something more nuanced and contextualized by time. As a reflection of our research, neither the customer nor service provider ever had particularly challenging experiences. We synthesized our research to create a customer journey map of the most engaged water consumers in Pittsburgh, and such an exercise pointed toward a need.
-
-            </p>
-        </div>
-    </div>
-
-  <div class="row justify-content-center mb-5">
-    <div class="col-lg-9">
-      <div class="media d-block media-custom text-center">
-          <a data-aos="fade-up" data-aos-delay="100" href="images/maya_customer2.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_customer2.png" alt="Image" class="img-fluid"></a>
-          <h3 class="mb-4 section-title text-left" data-aos="fade-up"> Customer Oppertunity</h3>
-          <p class="text-left" data-aos="fade-up" data-aos-delay="100">Customers currently lack a way to tell if their strategies for conserving water are effective - in either the short or long term.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="row justify-content-center mb-5">
-    <div class="col-lg-9">
-      <div class="media d-block media-custom text-center">
-          <a data-aos="fade-up" data-aos-delay="100" href="images/maya_customer1.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_customer1.png" alt="Image" class="img-fluid"></a>
-          <h3 class="mb-4 text-left" data-aos="fade-up"> Provider Oppertunity</h3>
-          <p class="text-left" data-aos="fade-up" data-aos-delay="100">Providers have no way of understanding customer water usage behaviors, system behvaiors as a whole, and lack content to help users mitigate their water usage. </p>
-      </div>
-    </div>
-  </div>
-
-		
-	<!-- Story_Boarding --> 
-	
-		<div class="row text-left justify-content-left mb-5">
-       	 <div class="col-md-12">
-       	    <h2 class="mb-4 section-title" data-aos="fade-up"> Storyboarding and Speed-dating concepts  </h2>
-        	  <p data-aos="fade-up" data-aos-delay="100">The team generated storyboards to visualize responsive web solutions that could meet the need of contextualizing water usage data in meaningful ways. The first five storyboards’ solutions achieved this through fact-sharing, however when speed-dating, we gained valuable insights on users’ solution preferences: Users craved a broad-strokes knowledge of water usage instead of knowing detailed facts. Our refined storyboard addressed the same need through a personalized, dashboard-style solution. This tested well, so we began low-fidelity design.
-            </p>
-	 	     </div>
-      </div>
-	
-    <div class="row justify-content-center mb-5">
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="media d-block media-custom text-left">
-            <a data-aos="fade-up" data-aos-delay="100"  href="images/maya_story1.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_story1.png" alt="Image Placeholder" class="img-fluid"></a>
-        <p data-aos="fade-up" data-aos-delay="100">Concept focused on primarily maintaining water behavior records through a household. Preformed poorly.</p>
-            <div class="media-body">
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="media d-block media-custom text-left">
-            <a data-aos="fade-up" data-aos-delay="100"  href="images/maya_story2.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_story2.png" alt="Image Placeholder" class="img-fluid"></a>
-         <p data-aos="fade-up" data-aos-delay="100">Concept centered around smart device tracking water through "hearing" the usage. Subjects had privacy concerns and was unpopular.</p>
-            <div class="media-body">
-            </div>
-          </div>
-        </div>
-    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="media d-block media-custom text-left">
-            <a data-aos="fade-up" data-aos-delay="100"  href="images/maya_story3.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_story3.png" alt="Image Placeholder" class="img-fluid"></a>
-         <p data-aos="fade-up" data-aos-delay="100">Selected - Concept focused on helping users visualize their water behaviors and were given suggestions based on their usage patterns. </p>
-            <div class="media-body">
-            </div>
-          </div>
-        </div>
-  </div>
-            
-	 <!-- Spell checked upto this point 12/19 -->
-
-    <!-- WireFramming  1 -->
-
-    <div class="row text-left justify-content-left mb-5">
-         <div class="col-md-12">
-            <h2 class="mb-4 section-title" data-aos="fade-up"> Wireframing </h2>
-            <p data-aos="fade-up" data-aos-delay="100"> With a narrowed scope of what our solution would revolve around, an interactive billing portal for users and providers, the team focused on wireframing by hand to produce many iterations. We started with focusing on the mobile screen and looked to adapt the design to a desktop as we entered low-fi digital prototyping.</p>
-         </div>
-    </div>
-
-      <div class="row justify-content-center mb-5">
-        <div class="col-sm-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="media d-block media-custom text-left">
-            <a data-aos="fade-up" data-aos-delay="100"  href="images/maya_wireframe4.jpg" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_wireframe4.jpg" alt="Image Placeholder" class="img-fluid"></a>
-        <p data-aos="fade-up" data-aos-delay="100">Photo of myself wireframing during our design session</p>
-            <div class="media-body">
-            </div>
-          </div>
-        </div>
-      </div>
-
-    <div class="row justify-content-center mb-5">
-        <div class="col-sm-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="media d-block media-custom text-left">
-            <a data-aos="fade-up" data-aos-delay="100"  href="images/maya_wireframe.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_wireframe.png" alt="Image Placeholder" class="img-fluid"></a>
-        <p data-aos="fade-up" data-aos-delay="100">Wireframe of profile screen for the billing platform exploring layouts</p>
-            <div class="media-body">
-            </div>
-          </div>
-        </div>
-      <div class="col-sm-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="media d-block media-custom text-left">
-            <a data-aos="fade-up" data-aos-delay="100"  href="images/maya_wireframe2.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_wireframe2.png" alt="Image Placeholder" class="img-fluid"></a>
-         <p data-aos="fade-up" data-aos-delay="100">Early sketches of insights page which would help users and providers understand user behaviors</p>
-            <div class="media-body">
-            </div>
-          </div>
-        </div>
-      <div class="col-sm-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="media d-block media-custom text-left">
-            <a data-aos="fade-up" data-aos-delay="100"  href="images/maya_wireframe3.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_wireframe3.png" alt="Image Placeholder" class="img-fluid"></a>
-         <p data-aos="fade-up" data-aos-delay="100">Wireframe of what a potential user analytic page would look like</p>
-            <div class="media-body">
-            </div>
-          </div>
-        </div>
-  </div>
-
-	
-
-	<!-- LOFI Prototyping 1 -->
-
-		<div class="row text-left justify-content-left mb-5">
-       	 <div class="col-md-12">
-       	    <h2 class="mb-4 section-title" data-aos="fade-up"> Lo-fi prototyping in Figma </h2>
-        	  <p data-aos="fade-up" data-aos-delay="100"> Our lo-fi mockup emphasized water usage through text, bar graphs and by training a machine learning model to understand usage behavior of users through prompting users with questions. Feedback about the ML model and constant questioning was skeptical - the feeling of surveillance detracted from the ability to learn from the dashboard. We challenged ourselves to provide value with as little disruption to users’ lives as possible, and therefore moved to an insight and visualization based approach. </p>
-	 	     </div>
-    </div>
-
-    <div class="row justify-content-center mb-5">
-        <div class="col-sm-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="media d-block media-custom text-left">
-            <a data-aos="fade-up" data-aos-delay="100"  href="images/maya_lofi11.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_lofi11.png" alt="Image Placeholder" class="img-fluid"></a>
-        <p data-aos="fade-up" data-aos-delay="100">Home screen of the lo-fi prototype showing a quick link to pay water bill, a simple weekly usage visualization, and a usage insight</p>
-            <div class="media-body">
-            </div>
-          </div>
-        </div>
-      <div class="col-sm-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="media d-block media-custom text-left">
-            <a data-aos="fade-up" data-aos-delay="100"  href="images/maya_lofi22.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_lofi22.png" alt="Image Placeholder" class="img-fluid"></a>
-         <p data-aos="fade-up" data-aos-delay="100">User analytic page which had access to more customizable visualizations, quick account summary, and further insights</p>
-            <div class="media-body">
-            </div>
-          </div>
-        </div>
-      <div class="col-sm-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="media d-block media-custom text-left">
-            <a data-aos="fade-up" data-aos-delay="100"  href="images/maya_lofi3333.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_lofi3333.png" alt="Image Placeholder" class="img-fluid"></a>
-         <p data-aos="fade-up" data-aos-delay="100">Questions page prompted users with individualized questions. These would help train a user's ML model to understand their behavior with water</p>
-            <div class="media-body">
-            </div>
-          </div>
-        </div>
-  </div>
-    
-    <div class="row justify-content-center mb-5">
-      <div class="col-lg-9">
-        <div class="media d-block media-custom text-center">
-          <a data-aos="fade-up" data-aos-delay="100" href="images/maya_lofi.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_lofi.png" alt="lo-fi desktop" class="img-fluid"></a>
-          <p class="text-left" data-aos="fade-up" data-aos-delay="100">Early exploration of the desktop view for users with all phone screens fitting into one "dashboard" style page. Profile page would grow out of left side if prompted. Navigation was based on phone style with "hamburger" navigation menu. More questions and analytics would be available through this view</p>
-      </div>
-    </div>
-  </div>
-
-    <!-- Midfi Prototyping 1 -->
-
-
-      <div class="row text-left justify-content-left mb-5">
-         <div class="col-md-12">
-            <h2 class="mb-4 section-title" data-aos="fade-up"> Mid-fi prototyping in Figma </h2>
-            <p data-aos="fade-up" data-aos-delay="100">The Mid-fi prototype was focused on cleaning up the visuals and adding new functionality to the design. The first allowed users to search and submit tips to reduce water usage by using a tag selection page. The second feature compared users water usage anonymously to other similar households. This comparison replaced the ML model explored in the previous iteration as it was more helpful in giving context to user's behaviors. As well as had the added effect of making users want to decrease their water usage. Feedback of this iteration was overall positive but determined that there was too much text driven data - and that the final iteration should be more visually driven. 
-          </div>
-      </div>
-
-    <div class="row justify-content-center mb-5">
-        <div class="col-sm-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="media d-block media-custom text-left">
-            <a data-aos="fade-up" data-aos-delay="100"  href="images/maya_midfi.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_midfi.png" alt="Mid-fi screen 1" class="img-fluid"></a>
-            <p data-aos="fade-up" data-aos-delay="100">Profile page was added to mid-fi and showcased basic user information. Also added a ranking system for similar users in your group</p>
-            <div class="media-body">
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="media d-block media-custom text-left">
-              <a data-aos="fade-up" data-aos-delay="100"  href="images/maya_midfi2.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_midfi2.png" alt="Mid-fi screen 2" class="img-fluid"></a>
-              <p data-aos="fade-up" data-aos-delay="100">Updated usage page featured scrollable analytics which compared your personal water usage with others in your group - testing found this too text heavy </p>
-              <div class="media-body">
-              </div>
-          </div>
-        </div>
-
-    <div class="col-sm-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="media d-block media-custom text-left">
-            <a data-aos="fade-up" data-aos-delay="100"  href="images/maya_midfi1.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_midfi1.png" alt="Mid-fi screen 3" class="img-fluid"></a>
-            <p data-aos="fade-up" data-aos-delay="100">Insight page evolved into a page where users could search for water reduction tips through popular tags. Page also allowed area for users to submit tips and rate the difficulty and effectiveness</p>
-            <div class="media-body">
-            </div>
-          </div>
-        </div>
-  </div>
-
-
-    <div class="row justify-content-center mb-5">
-      <div class="col-lg-9">
-        <div class="media d-block media-custom text-center">
-          <a data-aos="fade-up" data-aos-delay="100" href="images/maya_midfi3.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_midfi3.png" alt="Mid-fi desktop" class="img-fluid"></a>
-          <p class="text-left" data-aos="fade-up" data-aos-delay="100">Desktop view became more refined and removed the insights from first dashboard view. Added top of page directory and created a more standard desktop webpage language that matched with user testing heuristic evaluation</p>
-      </div>
-    </div>
-  </div>
-
-       
-
-
-  
-<!-- Customer Final  -->
-
-
-    <div class="row text-left justify-content-left mb-5">
-         <div class="col-lg-12">
-            <h2 class="mb-4 section-title" data-aos="fade-up"> Hi-Fi Product: Customer </h2>
-            <p data-aos="fade-up" data-aos-delay="100"> Moving away from very text heavy display, our hi-fi prototype instead emphasized quick visualizations that are aesthetic and highly legible. Users would be able to very clearly understand their current water usage, the context of that usage in relation to other simal users, and context of that usage in volume. As well as see how their usage is fluctating or an idcation of possible leak in their home. On desktop, users could even explore this data further by setting goals for their usage and use a data slider to dive deeper into usage visualizations. This prototype also devolped the insights page further allowing for a search functionality and a more legible visual language.  </p>
-         </div>
-    </div>
-
-
-    <div class="row justify-content-center mb-5">
-        <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
-          <div class="media d-block media-custom text-left">
-            <a data-aos="fade-up" data-aos-delay="100"  href="images/maya_customergif_home.gif" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_customergif_home.gif" alt="Image Placeholder" class="img-fluid"></a>
-        <p data-aos="fade-up" data-aos-delay="100">Animation showing the design moving from the home page to the data analytics page. Together both pages offer a complete view of users water usage</p>
-            <div class="media-body">
-            </div>
-          </div>
-        </div>
-      <div class="col-lg-9" data-aos="fade-up" data-aos-delay="200">
-          <div class="media d-block media-custom text-left">
-            <a data-aos="fade-up" data-aos-delay="100"  href="images/maya_final1.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_final1.png" alt="Image Placeholder" class="img-fluid"></a>
-         <p data-aos="fade-up" data-aos-delay="100">Desktop view showcased all of the home and analytics page in one quick dashboard view. This view also offered brushing and linking on the data visualization, goal setting, and more data visualization for user to contextualize their water usage.</p>
-            <div class="media-body">
-            </div>
-          </div>
-        </div>
-  </div>
-
-    <div class="row justify-content-center mb-5">
-        <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
-          <div class="media d-block media-custom text-left">
-            <a data-aos="fade-up" data-aos-delay="100"  href="images/maya_customergif.gif" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_customergif.gif" alt="Image Placeholder" class="img-fluid"></a>
-            <p data-aos="fade-up" data-aos-delay="100">Animation showing the process users would go through to select tags and the tips they would receive</p>
-            <div class="media-body">
-            </div>
-          </div>
-        </div>
-      <div class="col-lg-9" data-aos="fade-up" data-aos-delay="200">
-          <div class="media d-block media-custom text-left">
-            <a data-aos="fade-up" data-aos-delay="100"  href="images/maya_final3.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_final3.png" alt="Image Placeholder" class="img-fluid"></a>
-            <p data-aos="fade-up" data-aos-delay="100">Desktop view of the same functionality but requiring less animation due to the size and area of pixels</p>
-            <div class="media-body">
-            </div>
-          </div>
-      </div>
-    </div>
-
-      <!-- Provider Final  -->
-
-<div class="row text-left justify-content-left mb-5">
-  <div class="col-md-12">
-    <h2 class="mb-4 section-title" data-aos="fade-up"> Hi-Fi Product: Provider </h2>
-    <p data-aos="fade-up" data-aos-delay="100"> With most of our group focus being on the customer, we decide in the end that provider pages should very similarly reflect customer user pages. This being for two reasons: first, that when customers call providers for assistance, they can walk them through the web portal directly, and second, so that both the provider and customers have the access to the same sorts of data. The difference being for the providers web design is that they are able to see customers history in insights and able to see their billing history. Other functionality that the provider view has is the ability to search user's profiles directly, use a map to view any issues in customers properties or water districts, and update any notes on customers’ accounts. </p>
-  </div>
-</div>
-
-<div class="row justify-content-center mb-5">
-        <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
-          <div class="media d-block media-custom text-left">
-            <a data-aos="fade-up" data-aos-delay="100"  href="images/maya_providergif.gif" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_providergif.gif" alt="Image Placeholder" class="img-fluid"></a>
-            <p data-aos="fade-up" data-aos-delay="100">Animation showing how a provider on scene might use the mobile web page to explore nearby properties on the map to find issues in customers’ accounts</p>
-            <div class="media-body">
-            </div>
-          </div>
-        </div>
-      <div class="col-lg-9" data-aos="fade-up" data-aos-delay="200">
-          <div class="media d-block media-custom text-left">
-            <a data-aos="fade-up" data-aos-delay="100"  href="images/maya_provider1.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_provider1.png" alt="Image Placeholder" class="img-fluid"></a>
-            <p data-aos="fade-up" data-aos-delay="100">Desktop provider view looks similar to customers but has more detailed information on their billing history, insight history, and is able to show if there are any "alerts" on their account. This tool was design specifically for customer service to use when assisting customers with any water usage problems</p>
-            <div class="media-body">
-            </div>
-          </div>
-      </div>
-    </div>
-    <div class="row justify-content-center mb-5">
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="media d-block media-custom text-left">
-            <a data-aos="fade-up" data-aos-delay="100"  href="images/maya_provider2.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_provider2.png" alt="Image Placeholder" class="img-fluid"></a>
-            <p data-aos="fade-up" data-aos-delay="100">User search feature on provider's side desktop view allows the customer service agents to at a glance see any potential alerts on user's accounts</p>
+          <div class="media d-block media-custom text-center">
+            <a data-aos="fade-up" data-aos-delay="100"  href="images/ml_testing1.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/ml_testing1.png" alt="Image Placeholder" class="img-fluid"></a>
             <div class="media-body">
             </div>
           </div>
         </div>
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="media d-block media-custom text-left">
-            <a data-aos="fade-up" data-aos-delay="100"  href="images/maya_provider3.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/maya_provider3.png" alt="Image Placeholder" class="img-fluid"></a>
-            <p data-aos="fade-up" data-aos-delay="100">Map view allows providers to see any issues in the water line at a water district level. This helps to reduce wastewater and notify providers if there is an issue in a greater neighborhood area</p>
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="media d-block media-custom text-center">
+            <a data-aos="fade-up" data-aos-delay="100"  href="images/ml_cover.jpg" class="mb-3 d-block" data-fancybox="gal"><img src="images/ml_cover.jpg" alt="Image Placeholder" class="img-fluid"></a>
             <div class="media-body">
             </div>
           </div>
+        </div>
       </div>
+      
+      <div class="row text-left justify-content-left mb-5">
+        <div class="col-lg-12">
+           <h2 class="mb-4 section-title" data-aos="fade-up">Final intergration </h2>
+            <p data-aos="fade-up" data-aos-delay="100">Using the incoming bounding box parameters from shape detection - pickle loaded the binary ml data and was able to successfully track motion of the hand and around arbitrary drawn lines and circles. Below is a link to the video of the entire project demo coming together.
+            </p>
+        </div>
     </div>
+
+  <div class="row text-left justify-content-left mb-5">
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIeg2B4piIY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+	<!-- Story_Boarding --> 
      
-<!-- Spell checked upto this point 01/06/20 -->
-
-
  <!-- Conclusion Final  -->
 
 <div class="row text-left justify-content-left mb-5">
   <div class="col-md-12">
     <h2 class="mb-4 section-title" data-aos="fade-up"> Conclusion </h2>
-    <p data-aos="fade-up" data-aos-delay="100"> We dubbed our final solution Maya Dashboard becasue Maya is the hebrew name for water - and users/providers alike would be able to easily flow thier data to understand water usage. Overall recpetion of the project was high and as a team we felt a great deal of success. Rather than approach the project from a more gamify or campy angle - we felt that by looking at the billing process our solution was pragamtic and applicable. The project helped me to understand the power of responsive web design as well as reinforced the overall UX design process. It also was a great exploration of figma's animation tools and Dreamweaver for final visualizations.  </p>
+    <p data-aos="fade-up" data-aos-delay="100"> Overall -  as a team we felt that we accomplished our goals and were able to utilize ML and OpenCV to create a smart board type system. While our final project fell short of our initial goals - we feel that what we have created is an excellent proof of concept to exploring the domain. In the future I hope to better explore the implmentation of non-ML based gesture recognition for this sort of domain and also explore different featurization methods. 
+ </p>
   </div>
 </div>   
 
