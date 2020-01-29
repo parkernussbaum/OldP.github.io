@@ -311,3 +311,20 @@ canvas {
 }
 
 
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+}
+
+.nav-link{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.navbar-brand{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
