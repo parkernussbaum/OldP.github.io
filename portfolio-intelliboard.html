@@ -107,7 +107,7 @@
 
     <div class="row text-left justify-content-center mb-5">
       <div class="col-md-12">
-          <h1 class="mb-4 section-title" data-aos="fade-up"> Problem  </h1>
+          <h1 class="mb-4 section-title" data-aos="fade-up"> Smart boards are expensive, complicated, and do not utilize existing whiteboards  </h1>
       </div>
 
         <div class="col-lg-3 mb-4">
@@ -142,7 +142,7 @@
 
     <div class="row text-left justify-content-left mb-5">
           <div class="col-md-12">
-            <h2 class="mb-4 section-title" data-aos="fade-up"> Solution </h2>
+            <h2 class="mb-4 section-title" data-aos="fade-up"> Solution: A ML driven application that interacts with white board usage via a projector and camera - Intelliboard</h2>
             <p data-aos="fade-up" data-aos-delay="100"> Intelliboard is an intelligent application that works leverages a web cab and a projector to turn a smart board into an interactive intelligent display. Intelliboard uses user drawing, gesture recognition, and basic voice command to create  a truly dynamic white board experience. </p>
              <a data-aos="fade-up" data-aos-delay="100"  href="https://github.com/parkernussbaum/MLSensingGestureRecognition" class="mb-3 d-block" >My code can be checked out here!</a>
           </div>
@@ -167,7 +167,7 @@
     
        <div class="row text-left justify-content-left mb-5">
           <div class="col-md-12">
-            <h2 class="mb-4 section-title" data-aos="fade-up"> Concept </h2>
+            <h2 class="mb-4 section-title" data-aos="fade-up"> New smart board products come out every year. Why hasn't there been a solution that leverages existing whiteboards? </h2>
             <p data-aos="fade-up" data-aos-delay="100">There have been dozens of attempts to merge the collaboration and communication capabilities of a whiteboard with the dynamic interaction of digital tools, but they have always had a digital first design mentality or hardware focused solution.
             We have aimed to reverse this trend by making an ordinary whiteboard capable of digital interaction. Through the use of machine learning and computer vision we have been able to create a working prototype that can automatically calibrate itself, detect drawn shapes, and detect gestures.
           </p>
@@ -198,7 +198,7 @@
   <div class="row justify-content-center mb-5">
     <div class="col-lg-12">
       <div class="media d-block media-custom text-center">
-          <h3 class="mb-4 section-title text-left" data-aos="fade-up">Model of Intelliboard system</h3>
+          <h3 class="mb-4 section-title text-left" data-aos="fade-up">Model of Intelliboard machine learning system guided our process</h3>
           <p class="text-left" data-aos="fade-up" data-aos-delay="100">The camera acts as the key to this process. Using OpenCV, jypiter notebooks, and scikit learn machine learning algorthims, the camera is able to determine orientation, flattens the image, and then interpret what it sees on the white board. At that point the user would either be in an interact or draw state. These images would then go back to the camera to be processed and the model would be updated with the projector</p>
           <a data-aos="fade-up" data-aos-delay="100" href="images/ml_3.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/ml_3.png" alt="Image" class="img-fluid"></a>
       </div>
@@ -211,7 +211,7 @@
  
       <div class="row text-left justify-content-left mb-5">
          <div class="col-md-12">
-           <h2 class="mb-4 section-title" data-aos="fade-up"> Gesture Interaction: Slider, Rotary, Button </h2>
+           <h2 class="mb-4 section-title" data-aos="fade-up"> Area of focus - gesture recognition based on drawn sliders, rotary knobs, and buttons </h2>
            <p data-aos="fade-up" data-aos-delay="100">With my focus being on the interactive aspect of the system I looked towards creating novel gesture interactions with drawn objects on a white board. Since some of the most common interactions on digital touch screen devices today are rotary knobs, sliders, and push buttons - I wanted to create a way to translate this language with our system. By leveraging the shape detection, I decided to create an algorithm to read slider position and rotary position.</p>
          </div>
       </div>
@@ -242,7 +242,7 @@
 
     <div class="row text-left justify-content-left mb-5">
         <div class="col-lg-12">
-           <h2 class="mb-4 section-title" data-aos="fade-up">Training: Ground truth images </h2>
+           <h2 class="mb-4 section-title" data-aos="fade-up">Creating ground truth images </h2>
             <p data-aos="fade-up" data-aos-delay="100">Using stills from my videos of preforming actions - I generated 120 images of rotary knob on a 12” circle (15 stills at 0,90,180,270 deg increments both left and right hand) and 110 images of a 18” slider (11 images at 0%,25%,50%,75%, and 100% increments - both left and right hand). These images were all shot with the same camera we were going to use for our final demonstration to assure success.
             </p>
         </div>
@@ -275,7 +275,7 @@
 	
       <div class="row text-left justify-content-left mb-5">
         <div class="col-lg-12">
-           <h2 class="mb-4 section-title" data-aos="fade-up"> Featurizing </h2>
+           <h2 class="mb-4 section-title" data-aos="fade-up"> Tweaking the features and training </h2>
             <p data-aos="fade-up" data-aos-delay="100">Initial attempts focused at using individual features based on grayscale mean/std, edge detection mean/std, and threshold curvature (single numerical values) but found that performance was low due to overlap in Left and right hand. I instead opted to preprocess the photos to a low resolution (around 40 x 40 pixels) and run the entire image as a feature. This brought performance up significantly and proved to be a successful approach.
             </p>
         </div>
@@ -298,7 +298,7 @@
 
       <div class="row text-left justify-content-left mb-5">
         <div class="col-lg-12">
-           <h2 class="mb-4 section-title" data-aos="fade-up"> Testing </h2>
+           <h2 class="mb-4 section-title" data-aos="fade-up"> Testing and cross-validation led to initial low preformance </h2>
             <p data-aos="fade-up" data-aos-delay="100">The algorithm was trained and tested through 10 fold cross validation and the features were not normalized. The highest preforming by far was Random forest - but I also tried SVM-RBF, SVM-linear, and KNN neighbor. Results with random forest were coming in around 92% for Slider but significantly lower for rotary around 82%. Also - during live testing with a camera the system behaved strangely and unpredictable even when training conditions were mimicked. I knew that more ground truth conditions could be an easy fix.
             </p>
         </div>
@@ -306,7 +306,7 @@
 
       <div class="row text-left justify-content-left mb-5">
         <div class="col-lg-12">
-           <h2 class="mb-4 section-title" data-aos="fade-up"> Increasing functionality </h2>
+           <h2 class="mb-4 section-title" data-aos="fade-up"> Increasing functionality and preformance with more ground truth images </h2>
             <p data-aos="fade-up" data-aos-delay="100">Because of these lack luster results - I went back and added an extra 120 images to rotary (of 45, 135, 215, 315 deg L+R) and 110 images to slider( 12,32,62 and 87% L+ R). I also added a no hand class - I thought this would be useful so that our total pipeline would know to ignore the space if there was no movement.
             </p>
         </div>
@@ -329,7 +329,7 @@
 
       <div class="row text-left justify-content-left mb-5">
         <div class="col-lg-12">
-           <h2 class="mb-4 section-title" data-aos="fade-up">Final Accuracy and Performance </h2>
+           <h2 class="mb-4 section-title" data-aos="fade-up">Final Accuracy and Performance was strong </h2>
             <p data-aos="fade-up" data-aos-delay="100">Final performance for the slider with the added extra 5 ground truths ended up around 87-88% with random forest. For our implemented system this tested to be successful enough for a minimum viable product. Other classifiers - KNN - 75%  / SVM_RBF - 23%. Final performance of the rotary system with the added extra 5 ground truths ended up around 92-94% with random forest. For our implemented system this tested to be successful enough for a minimum viable product. Other classifiers - KNN - 75%  / SVM_RBF - 42%
             </p>
         </div>
@@ -356,7 +356,7 @@
       
       <div class="row text-left justify-content-left mb-5">
         <div class="col-lg-12">
-           <h2 class="mb-4 section-title" data-aos="fade-up">Final intergration </h2>
+           <h2 class="mb-4 section-title" data-aos="fade-up">Final integration with my teammates systems </h2>
             <p data-aos="fade-up" data-aos-delay="100">Using the incoming bounding box parameters from shape detection - pickle loaded the binary ml data and was able to successfully track motion of the hand and around arbitrary drawn lines and circles. Below is a link to the video of the entire project demo coming together.
             </p>
         </div>
@@ -383,7 +383,7 @@
 
   <div class="row text-left justify-content-left mb-5">
     <div class="col-md-12">
-      <h2 class="mb-4 section-title" data-aos="fade-up"> Sample Screens  </h2>
+      <h2 class="mb-4 section-title" data-aos="fade-up"> Sample Screens imagining what the system UI would look like  </h2>
       <p data-aos="fade-up" data-aos-delay="100"> With the project finished - I worked later on in the semester to create some sample screens of our our system could be leveraged. From playing videos for a class room, to creating a mood board, to wire framing. Intelliboard has the potential to give computer interaction to already existing infrastructure in schools and offices around the world.
       </p>
     </div>
